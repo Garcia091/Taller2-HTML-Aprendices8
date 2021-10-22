@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --color-Letra: #fff;  
+}
+
+body{
+    background-image: url('https://images5.alphacoders.com/964/964482.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-Letra);
+    font-family: 'Noto Sans Mono', 'monospace';
+}
+
+nav{
+    background-color: rgba(119, 136, 153, 0.2);
+    width: 100%;
+}
+
+.menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+  width: 100%;
+}
+
+.lista{
+    display: inline-block;
+}
+
+.lista-r{
+    float: right;
+}
+
+.lista a{
+    text-decoration: none;
+    color: var(--color-Letra);
+    display: block;
+    padding: 15px 50px;
+}
+
+.lista a:hover{
+    background-color: tomato;
+}
+
+main{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+p{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: rgba(8, 53, 97, 0.4);
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+input::placeholder{
+    color: var(--color-Letra);
+}
+
+input:focus{
+    outline: none;
+    background-color: rgba(8, 53, 97, 0.9);
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: red;
+    color: var(--color-Letra);
+    padding: 10px;
+    margin-top: 10px;
+    font-size:18px;
+}
+
